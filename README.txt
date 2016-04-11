@@ -10,6 +10,6 @@ Bibliographic reference:
 Visi, Coorevits, Schramm, Miranda “Musical Instruments, Body Movement, Space, and Motion Data: Music as an Emergent Multimodal Choreography” (2016, forthcoming).
 Further bibliographic references were added inside the patch as text comments where relevant.
 
-To use these features with Wekinator, modify the "9DoF Features Wekinator.maxpat" patch by adding the data streams from your 9DoF sensor as described in the comments. The required externals are included in the "ext" folder.
+To use these features with Wekinator, modify the "9DoF Features Wekinator.maxpat" patch by adding the data streams from your 9DoF sensor as described in the comments. Requires the FTM library from Ircam: http://ftm.ircam.fr/index.php/Download . Other required externals are included in the "ext" folder.
 
 www.federicovisi.com
