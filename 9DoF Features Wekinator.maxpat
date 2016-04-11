@@ -45,7 +45,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 939.0, 122.0, 154.0, 39.0 ],
-					"presentation_rect" : [ 899.0, 117.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "Window size (in samples)"
 				}
@@ -61,7 +60,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 764.5, 122.0, 154.0, 52.0 ],
-					"presentation_rect" : [ 724.5, 117.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "Accelerometer data (list of 3 floats)"
 				}
@@ -77,7 +75,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 587.0, 122.0, 174.0, 52.0 ],
-					"presentation_rect" : [ 547.0, 117.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "Orientation data in quaternions (list of 4 floats)"
 				}
@@ -92,7 +89,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 374.0, 122.0, 154.0, 39.0 ],
-					"presentation_rect" : [ 375.5, 123.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "Window size (in samples)"
 				}
@@ -108,7 +104,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 199.5, 122.0, 154.0, 52.0 ],
-					"presentation_rect" : [ 201.0, 124.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "Accelerometer data (list of 3 floats)"
 				}
@@ -367,9 +362,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 657.0, 188.5, 372.0, 31.0 ],
+					"patching_rect" : [ 657.0, 188.5, 377.0, 31.0 ],
 					"style" : "",
-					"text" : "fv.imuqom2 #1"
+					"text" : "fv.imuqom3 #1"
 				}
 
 			}
@@ -504,7 +499,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "fv.jerkiness.maxpat",
-				"bootpath" : "~/Documents/kadenze ML/Assignments/Session 4 Assignment 9",
+				"bootpath" : "~/Documents/kadenze ML/Assignments/Session 4 Assignment 9/9DoF Features for Max/9DoF-Features-for-Max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -522,7 +517,7 @@
 			}
 , 			{
 				"name" : "fv.imuqom3.maxpat",
-				"bootpath" : "~/Documents/kadenze ML/Assignments/Session 4 Assignment 9",
+				"bootpath" : "~/Documents/kadenze ML/Assignments/Session 4 Assignment 9/9DoF Features for Max/9DoF-Features-for-Max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
