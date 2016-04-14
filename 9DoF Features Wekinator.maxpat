@@ -120,7 +120,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 22.0, 122.0, 154.0, 52.0 ],
 					"style" : "",
-					"text" : "Accelerometer data (list of 3 floats)"
+					"text" : "Gyroscope data (list of 3 floats)"
 				}
 
 			}
