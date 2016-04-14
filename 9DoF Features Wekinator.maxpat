@@ -2,10 +2,11 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 6,
-			"minor" : 1,
-			"revision" : 10,
-			"architecture" : "x86"
+			"major" : 7,
+			"minor" : 2,
+			"revision" : 1,
+			"architecture" : "x86",
+			"modernui" : 1
 		}
 ,
 		"rect" : [ 34.0, 78.0, 1228.0, 934.0 ],
@@ -17,28 +18,34 @@
 		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
 					"bubble" : 1,
 					"bubbleside" : 2,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-37",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 939.0, 122.0, 154.0, 39.0 ],
+					"style" : "",
 					"text" : "Window size (in samples)"
 				}
 
@@ -47,15 +54,13 @@
 				"box" : 				{
 					"bubble" : 1,
 					"bubbleside" : 2,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-38",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 764.5, 122.0, 154.0, 53.0 ],
+					"patching_rect" : [ 764.5, 122.0, 154.0, 52.0 ],
+					"style" : "",
 					"text" : "Accelerometer data (list of 3 floats)"
 				}
 
@@ -64,15 +69,13 @@
 				"box" : 				{
 					"bubble" : 1,
 					"bubbleside" : 2,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-39",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 577.5, 122.0, 174.0, 53.0 ],
+					"patching_rect" : [ 587.0, 122.0, 174.0, 52.0 ],
+					"style" : "",
 					"text" : "Orientation data in quaternions (list of 4 floats)"
 				}
 
@@ -81,14 +84,12 @@
 				"box" : 				{
 					"bubble" : 1,
 					"bubbleside" : 2,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-36",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 374.0, 122.0, 154.0, 39.0 ],
+					"style" : "",
 					"text" : "Window size (in samples)"
 				}
 
@@ -97,15 +98,13 @@
 				"box" : 				{
 					"bubble" : 1,
 					"bubbleside" : 2,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-35",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 199.5, 122.0, 154.0, 53.0 ],
+					"patching_rect" : [ 199.5, 122.0, 154.0, 52.0 ],
+					"style" : "",
 					"text" : "Accelerometer data (list of 3 floats)"
 				}
 
@@ -114,57 +113,54 @@
 				"box" : 				{
 					"bubble" : 1,
 					"bubbleside" : 2,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-34",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.0, 122.0, 154.0, 53.0 ],
-					"text" : "Gyroscope data (list of 3 floats)"
+					"patching_rect" : [ 22.0, 122.0, 154.0, 52.0 ],
+					"style" : "",
+					"text" : "Accelerometer data (list of 3 floats)"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
+					"format" : 6,
 					"id" : "obj-19",
 					"maxclass" : "flonum",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
+					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 657.0, 245.0, 50.0, 20.0 ]
+					"patching_rect" : [ 657.0, 245.0, 50.0, 22.0 ],
+					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
+					"format" : 6,
 					"id" : "obj-17",
 					"maxclass" : "flonum",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
+					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 90.0, 245.0, 50.0, 20.0 ]
+					"patching_rect" : [ 90.0, 245.0, 50.0, 22.0 ],
+					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
 					"fontsize" : 20.0,
-					"frgb" : 0.0,
 					"id" : "obj-5",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 22.0, 31.0, 702.0, 29.0 ],
+					"style" : "",
 					"text" : "Put the incoming data streams from your 9DoF sensor here:"
 				}
 
@@ -173,13 +169,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-12",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 577.5, 421.0, 193.0, 34.0 ],
+					"patching_rect" : [ 577.5, 421.0, 193.0, 33.0 ],
+					"style" : "",
 					"text" : "Optional: Send input names to Wekinator"
 				}
 
@@ -191,21 +187,21 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 548.0, 421.0, 24.0, 24.0 ]
+					"patching_rect" : [ 548.0, 421.0, 24.0, 24.0 ],
+					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-2",
 					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 548.0, 460.0, 243.0, 32.0 ],
+					"patching_rect" : [ 548.0, 460.0, 243.0, 35.0 ],
+					"style" : "",
 					"text" : "/wekinator/control/setInputNames jerkiness imuqom"
 				}
 
@@ -214,13 +210,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-1",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 188.0, 398.0, 226.0, 34.0 ],
+					"patching_rect" : [ 188.0, 398.0, 226.0, 33.0 ],
+					"style" : "",
 					"text" : "This part of the patch sends the data to Wekinator (www.wekinator.org)"
 				}
 
@@ -229,13 +225,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-10",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 169.0, 569.0, 362.0, 48.0 ],
+					"patching_rect" : [ 169.0, 569.0, 362.0, 47.0 ],
+					"style" : "",
 					"text" : "127.0.0.1 is same as localhost (i.e., this machine); you can change the host IP address if Wekinator is running on a different host."
 				}
 
@@ -244,13 +240,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-9",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 169.0, 534.0, 362.0, 34.0 ],
+					"patching_rect" : [ 169.0, 534.0, 362.0, 33.0 ],
+					"style" : "",
 					"text" : "127.0.0.1 is the host and 6448 is the port here. These are good defaults. "
 				}
 
@@ -259,12 +255,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-4",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 224.0, 460.0, 303.0, 20.0 ],
+					"style" : "",
 					"text" : "Optional: print OSC message to the Max console"
 				}
 
@@ -277,7 +273,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 188.0, 459.0, 34.0, 20.0 ],
+					"patching_rect" : [ 188.0, 459.0, 34.0, 22.0 ],
+					"style" : "",
 					"text" : "print"
 				}
 
@@ -291,7 +288,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 26.0, 443.0, 33.0, 20.0 ],
+					"patching_rect" : [ 26.0, 443.0, 33.0, 22.0 ],
+					"style" : "",
 					"text" : "t b s"
 				}
 
@@ -305,13 +303,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "OSCTimeTag" ],
-					"patching_rect" : [ 26.0, 488.0, 143.0, 20.0 ],
+					"patching_rect" : [ 26.0, 488.0, 143.0, 22.0 ],
+					"style" : "",
 					"text" : "OpenSoundControl 2000"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-74",
@@ -319,7 +319,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 26.0, 409.0, 118.0, 20.0 ],
+					"patching_rect" : [ 26.0, 409.0, 118.0, 22.0 ],
+					"style" : "",
 					"text" : "prepend /wek/inputs"
 				}
 
@@ -333,7 +334,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 26.0, 375.0, 57.0, 20.0 ],
+					"patching_rect" : [ 26.0, 375.0, 57.0, 22.0 ],
+					"style" : "",
 					"text" : "pak 1. 1."
 				}
 
@@ -346,35 +348,36 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 26.0, 533.0, 140.0, 20.0 ],
+					"patching_rect" : [ 26.0, 533.0, 140.0, 22.0 ],
+					"style" : "",
 					"text" : "udpsend 127.0.0.1 6448"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
 					"fontsize" : 20.0,
 					"id" : "obj-68",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 657.0, 188.5, 369.0, 29.0 ],
+					"patching_rect" : [ 657.0, 188.5, 377.0, 31.0 ],
+					"style" : "",
 					"text" : "fv.imuqom3 #1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
 					"fontsize" : 20.0,
 					"id" : "obj-66",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 90.0, 188.5, 373.0, 29.0 ],
+					"patching_rect" : [ 90.0, 188.5, 373.0, 31.0 ],
+					"style" : "",
 					"text" : "fv.jerkiness #1"
 				}
 
@@ -496,53 +499,42 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "fv.jerkiness.maxpat",
-				"bootpath" : "/Users/Omar/Documents/Omar/Aulas/KADENZE/Machine Learning for Musicians and Artists/S5/Ass 10/9DoF-Features-for-Max-master",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/kadenze ML/Assignments/Session 4 Assignment 9/9DoF Features for Max/9DoF-Features-for-Max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.delta.maxpat",
-				"bootpath" : "/Users/Omar/Documents/Omar/Aulas/KADENZE/Machine Learning for Musicians and Artists/S5/Ass 10/9DoF-Features-for-Max-master",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 7/Library/_FV_Max/Kineslimina 2016/Kineslimina2016 project/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mnm.list2col.maxpat",
-				"bootpath" : "/Users/Omar/Documents/Omar/Aulas/KADENZE/Machine Learning for Musicians and Artists/S5/Ass 10/9DoF-Features-for-Max-master",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 7/Library/_FV_Max/Kineslimina 2016/Kineslimina2016 project/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fv.imuqom3.maxpat",
-				"bootpath" : "/Users/Omar/Documents/Omar/Aulas/KADENZE/Machine Learning for Musicians and Artists/S5/Ass 10/9DoF-Features-for-Max-master",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/kadenze ML/Assignments/Session 4 Assignment 9/9DoF Features for Max/9DoF-Features-for-Max",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mnm.delta.mxe",
-				"type" : "iLaF"
+				"name" : "mnm.delta.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "ftm.object.mxe",
-				"type" : "iLaF"
+				"name" : "ftm.list.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "ftm.mess.mxe",
-				"type" : "iLaF"
+				"name" : "OpenSoundControl.mxo",
+				"type" : "iLaX"
 			}
-, 			{
-				"name" : "ftm.list.mxe",
-				"type" : "iLaF"
-			}
-, 			{
-				"name" : "OpenSoundControl.mxe",
-				"type" : "iLaF"
-			}
- ]
+ ],
+		"autosave" : 0
 	}
 
 }
